@@ -39,7 +39,7 @@ public class Analytics : MonoBehaviour
     {
         a= GameManager.instance.a; b= GameManager.instance.b;
 
-        Debug.Log("NumberParSelected: ("+a+", "+b+")");
+        Debug.Log("NumberPairSelected: ("+a+", "+b+")");
     }
 
     public void GameOver()

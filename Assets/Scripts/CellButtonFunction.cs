@@ -5,7 +5,7 @@ using UnityEngine.UI;
 public class CellButtonFunction : MonoBehaviour
 {
     public static CellButtonFunction Instance;
-    public int startNo;
+    public int startNo;//Player chooses these numbers
     public int endNo;
    
     
@@ -35,7 +35,7 @@ public class CellButtonFunction : MonoBehaviour
             startNo = currentNumber;
             GameManager.instance.a = startNo;
             Debug.Log("Start Number: " + startNo);
-            //isStartButtonClicked= false;
+            
             GameManager.instance.clickCount=1;
         }
         else if(GameManager.instance.clickCount == 1) 

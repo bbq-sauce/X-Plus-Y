@@ -9,13 +9,14 @@ using UnityEngine.UI;
 public class GameManager : MonoBehaviour
 {
 
-    public int a, b;
+    public int a, b;//two numbers selected by player for the calculation
+
     [SerializeField] TMP_Text topNumberText;
     [SerializeField] TMP_Text scoreText;
+
     public static GameManager instance;
     public SceneController sceneController;
     //public NumberCell numberCell;
-    public int gridSize = 9;
     
     public int score;
     
@@ -51,7 +52,7 @@ public class GameManager : MonoBehaviour
         }
         else
         {
-            SceneManager.LoadScene(2);
+            SceneManager.LoadScene(2);//Load GameOver Scene
            
         }
     }
